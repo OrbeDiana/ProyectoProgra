@@ -1690,7 +1690,7 @@ namespace ProyectoProgra
                     textBox3.Text = "1 ---> 1";
                 }
             }
-            /*Agregar
+            //Agregar
             History historial = new History()
             {
                 coin1 = comboBox1.Text,
@@ -1705,7 +1705,7 @@ namespace ProyectoProgra
                 conexion.CreateTable<History>();
                 conexion.Insert(historial);
             }
-            Close();*/
+            Close();
         }
        
             
