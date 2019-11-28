@@ -11,7 +11,7 @@
             <RowDefinition Height="47*"/>
             <RowDefinition Height="320*"/>
         </Grid.RowDefinitions>
-        <Button Content= "Switch" HorizontalAlignment="Left" Name="button1" Margin="263,165,0,0" VerticalAlignment="Top" Width="104" Height="58" RenderTransformOrigin="-0.221,0.603" FontSize="20" Background="Black" Foreground="White" Grid.Row="1" Click="Button_Click"/>
+        <Button Content= "Switch" HorizontalAlignment="Left" Name="SwitchBtn" Margin="263,165,0,0" VerticalAlignment="Top" Width="104" Height="58" RenderTransformOrigin="-0.221,0.603" FontSize="20" Background="Black" Foreground="White" Grid.Row="1" Click="SwitchBtn_Click"/>
         <Button Content= "Transform" HorizontalAlignment="Left" Name="TransformBtn" Margin="263,260,0,0" VerticalAlignment="Top" Width="104" Height="58" FontSize="20" Background="DarkRed" Foreground="Salmon" Grid.Row="1" Click="TransformBtn_Click"/>
         <ComboBox HorizontalAlignment="Left" Name="comboBox1" Margin="57,165,0,0" VerticalAlignment="Top" Width="176" Height="37" FontSize="16" Grid.Row="1">
             <ComboBoxItem Content="Select your change" Selector.IsSelected="True" />
@@ -56,7 +56,8 @@
             </Label.RenderTransform>
         </Label>
         <TextBox HorizontalAlignment="Left" Name="textBox3" Height="44" Margin="653,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="22" Grid.Row="1"/>
-        <Button Content="History" HorizontalAlignment="Left" Height="54" Margin="653,223,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" Click="Button_Click_2"/>
+        <Button Content="History" HorizontalAlignment="Left" Height="54" Margin="653,223,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" Click="History_Click"/>
+        <DataGrid x:Name="HistoryList" HorizontalAlignment="Left" Height="297" Margin="48,63,0,0" VerticalAlignment="Top" Width="667"/>
 
     </Grid>
 </Window>

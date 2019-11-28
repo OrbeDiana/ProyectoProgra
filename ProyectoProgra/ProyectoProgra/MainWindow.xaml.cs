@@ -28,7 +28,7 @@ namespace ProyectoProgra
         public MainWindow()
         {
             InitializeComponent();
-            LeerDatos();
+           LeerDatos();
         }
         private void LeerDatos()
         {
@@ -39,13 +39,13 @@ namespace ProyectoProgra
             }
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void History_Click(object sender, RoutedEventArgs e)
         {
             ProyectoProgra.Hist form = new ProyectoProgra.Hist();
             form.ShowDialog();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void SwitchBtn_Click(object sender, RoutedEventArgs e)
         {
             string i, t;
             //string selectedItem = comboBox1.Items[comboBox1.SelectedIndex].ToString();
@@ -873,7 +873,8 @@ namespace ProyectoProgra
 
         private void TransformBtn_Click(object sender, RoutedEventArgs e)
         {
-            
+            string rutaBaseDeDatos = Environment.CurrentDirectory + "//Historial.db";
+
             double o, res;
             string selectedItem = comboBox1.Items[comboBox1.SelectedIndex].ToString();
             coin = comboBox1.Text;
@@ -1689,8 +1690,25 @@ namespace ProyectoProgra
                     textBox3.Text = "1 ---> 1";
                 }
             }
-            //Agregar//
+            //Agregar
+            History historial = new History()
+            {
+                coin1 = comboBox1.Text,
+                change1 = Convert.ToDecimal(textBox1.Text),
+                coin2 = comboBox2.Text,
+                change2 = Convert.ToDecimal(textBox2.Text)
 
+            };
+
+            using (SQLiteConnection conexion = new SQLiteConnection(rutaBaseDeDatos))
+            {
+                conexion.CreateTable<History>();
+                conexion.Insert(historial);
+            }
+            Close();
         }
+       
+            
+        
     }
 }

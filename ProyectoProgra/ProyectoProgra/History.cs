@@ -10,10 +10,10 @@ namespace ProyectoProgra
     class History
     {
         [PrimaryKey, AutoIncrement]
-        public decimal Id { get; set; }
-        public decimal coin1 { get; set; }
+        public int Id { get; set; }
+        public string coin1 { get; set; }
         public decimal change1 { get; set; }
-        public decimal coin2 { get; set; }
+        public string coin2 { get; set; }
         public decimal change2 { get; set; }
     }
 }
