@@ -20,10 +20,10 @@
             <ComboBoxItem Content="Euro EUR" />
             <ComboBoxItem Content="Yen JPY" />
             <ComboBoxItem Content="Soles PEN" />
-            <ComboBoxItem Content="Rupias INR " />
+            <ComboBoxItem Content="Rupias INR" />
             <ComboBoxItem Content="Libras GBP" />
             <ComboBoxItem Content="Quetzal GTQ" />
-            <ComboBoxItem Content="Colombian Peso Cop" />
+            <ComboBoxItem Content="Colombian Peso COP" />
             <ComboBoxItem Content="Bolivars BOB" />
         </ComboBox>
         <ComboBox HorizontalAlignment="Left" Name="comboBox2" Margin="400,165,0,0" VerticalAlignment="Top" Width="176" Height="37" FontSize="16" Grid.Row="1">
@@ -33,10 +33,10 @@
             <ComboBoxItem Content="Euro EUR" />
             <ComboBoxItem Content="Yen JPY" />
             <ComboBoxItem Content="Soles PEN" />
-            <ComboBoxItem Content="Rupias INR " />
+            <ComboBoxItem Content="Rupias INR" />
             <ComboBoxItem Content="Libras GBP" />
             <ComboBoxItem Content="Quetzal GTQ" />
-            <ComboBoxItem Content="Colombian Peso Cop" />
+            <ComboBoxItem Content="Colombian Peso COP" />
             <ComboBoxItem Content="Bolivars BOB" />
         </ComboBox>
         <TextBox HorizontalAlignment="Left" Name="textBox1" Height="44" Margin="57,246,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="176" FontSize="22" Grid.Row="1"/>
@@ -55,7 +55,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox HorizontalAlignment="Left" Name="textBox3" Height="44" Margin="653,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="22" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Name="textBox3" Height="44" Margin="632,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" FontSize="22" Grid.Row="1"/>
         <Button Content="History" HorizontalAlignment="Left" Height="54" Margin="653,223,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" Click="History_Click"/>
         <DataGrid x:Name="HistoryList" HorizontalAlignment="Left" Height="297" Margin="48,63,0,0" VerticalAlignment="Top" Width="667"/>
 

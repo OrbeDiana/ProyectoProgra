@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using System.IO;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -107,7 +108,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.809251;
                     res = n * o;
@@ -123,7 +124,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 3365.41;
                     res = n * o;
@@ -188,7 +189,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.0415030;
                     res = n * o;
@@ -204,7 +205,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 173.175;
                     res = n * o;
@@ -269,7 +270,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.894153;
                     res = n * o;
@@ -285,7 +286,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 3724.04;
                     res = n * o;
@@ -350,7 +351,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.007529;
                     res = n * o;
@@ -366,7 +367,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 31.1200;
                     res = n * o;
@@ -431,7 +432,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.242018;
                     res = n * o;
@@ -447,7 +448,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 1012.31;
                     res = n * o;
@@ -512,7 +513,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> 1";
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.0112627;
                     res = n * o;
@@ -528,7 +529,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 47.4069;
                     res = n * o;
@@ -545,7 +546,7 @@ namespace ProyectoProgra
                     textBox3.Text = "1 ---> " + o;
                 }
             }
-            else if (coin == "Libra GBP")
+            else if (coin == "Libras GBP")
             {
                 if (op == "Dollar USD")
                 {
@@ -595,7 +596,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     result = n.ToString();
                     textBox2.Text = result;
@@ -609,7 +610,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 4152.26;
                     res = n * o;
@@ -676,7 +677,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.105518;
                     res = n * o;
@@ -690,7 +691,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> 1";
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 438.184;
                     res = n * o;
@@ -707,7 +708,7 @@ namespace ProyectoProgra
                     textBox3.Text = "1 ---> " + o;
                 }
             }
-            else if (coin == "Colombian peso COP")
+            else if (coin == "Colombian Peso COP")
             {
                 if (op == "Dollar USD")
                 {
@@ -757,7 +758,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.000240833;
                     res = n * o;
@@ -773,7 +774,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     result = n.ToString();
                     textBox2.Text = result;
@@ -838,7 +839,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.117398;
                     res = n * o;
@@ -854,7 +855,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 487.362;
                     res = n * o;
@@ -873,7 +874,9 @@ namespace ProyectoProgra
 
         private void TransformBtn_Click(object sender, RoutedEventArgs e)
         {
-            string rutaBaseDeDatos = Environment.CurrentDirectory + "//Historial.db";
+            string workingDirectory = Environment.CurrentDirectory;
+
+            string rutaBaseDeDatos = Directory.GetParent(workingDirectory).Parent.FullName + "\\Historial.db";
 
             double o, res;
             string selectedItem = comboBox1.Items[comboBox1.SelectedIndex].ToString();
@@ -928,7 +931,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.809251;
                     res = n * o;
@@ -944,7 +947,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 3365.41;
                     res = n * o;
@@ -1009,7 +1012,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.0415030;
                     res = n * o;
@@ -1025,7 +1028,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 173.175;
                     res = n * o;
@@ -1090,7 +1093,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.894153;
                     res = n * o;
@@ -1106,7 +1109,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 3724.04;
                     res = n * o;
@@ -1171,7 +1174,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.007529;
                     res = n * o;
@@ -1187,7 +1190,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 31.1200;
                     res = n * o;
@@ -1252,7 +1255,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.242018;
                     res = n * o;
@@ -1268,7 +1271,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 1012.31;
                     res = n * o;
@@ -1333,7 +1336,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> 1";
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.0112627;
                     res = n * o;
@@ -1349,7 +1352,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 47.4069;
                     res = n * o;
@@ -1366,7 +1369,7 @@ namespace ProyectoProgra
                     textBox3.Text = "1 ---> " + o;
                 }
             }
-            else if (coin == "Libra GBP")
+            else if (coin == "Libras GBP")
             {
                 if (op == "Dollar USD")
                 {
@@ -1416,7 +1419,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     result = n.ToString();
                     textBox2.Text = result;
@@ -1430,7 +1433,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 4152.26;
                     res = n * o;
@@ -1497,7 +1500,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.105518;
                     res = n * o;
@@ -1511,7 +1514,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> 1";
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 438.184;
                     res = n * o;
@@ -1528,7 +1531,7 @@ namespace ProyectoProgra
                     textBox3.Text = "1 ---> " + o;
                 }
             }
-            else if (coin == "Colombian peso COP")
+            else if (coin == "Colombian Peso COP")
             {
                 if (op == "Dollar USD")
                 {
@@ -1578,7 +1581,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.000240833;
                     res = n * o;
@@ -1594,7 +1597,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     result = n.ToString();
                     textBox2.Text = result;
@@ -1659,7 +1662,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Libra GBP")
+                else if (op == "Libras GBP")
                 {
                     o = 0.117398;
                     res = n * o;
@@ -1675,7 +1678,7 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> " + o;
                 }
-                else if (op == "Colombian peso COP")
+                else if (op == "Colombian Peso COP")
                 {
                     o = 487.362;
                     res = n * o;
@@ -1690,7 +1693,7 @@ namespace ProyectoProgra
                     textBox3.Text = "1 ---> 1";
                 }
             }
-            //Agregar
+            /*Agregar
             History historial = new History()
             {
                 coin1 = comboBox1.Text,
@@ -1705,7 +1708,7 @@ namespace ProyectoProgra
                 conexion.CreateTable<History>();
                 conexion.Insert(historial);
             }
-            Close();
+            Close();*/
         }
        
             
