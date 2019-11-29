@@ -11,9 +11,9 @@ namespace ProyectoProgra
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        public string coin1 { get; set; }
-        public decimal change1 { get; set; }
-        public string coin2 { get; set; }
-        public decimal change2 { get; set; }
+        public string Coin1 { get; set; }
+        public decimal Change1 { get; set; }
+        public string Coin2 { get; set; }
+        public decimal Change2 { get; set; }
     }
 }

@@ -7,8 +7,8 @@
         xmlns:local="clr-namespace:ProyectoProgra"
         mc:Ignorable="d"
         Title="Hist" Height="450" Width="800">
-    <Grid>
-        <Label Content="HISTORIAL" HorizontalAlignment="Left" Height="47" Margin="336,11,0,0" VerticalAlignment="Top" Width="156" FontSize="20"/>
+    <Grid Background="BlanchedAlmond">
+        <Label Content="HISTORIAL" HorizontalAlignment="Left" Height="58" Margin="299,0,0,0" VerticalAlignment="Top" Width="234" FontSize="40" FontFamily="Dosis"/>
         <DataGrid x:Name="HistoryList" HorizontalAlignment="Left" Height="297" Margin="48,63,0,0" VerticalAlignment="Top" Width="667"/>
 
     </Grid>

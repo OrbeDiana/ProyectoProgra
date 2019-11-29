@@ -30,6 +30,44 @@ namespace ProyectoProgra
         {
             InitializeComponent();
         }
+        private void mnuHelp_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Do you have any questions? Contact us!\n" +
+                "currencyconverter0@gmail.com");
+        }
+        private void mnuAbout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("CREATORS:\n" +
+                "Héctor Francisco Cazadero Garduño\n" +
+                "Diana Lizbeth Orbe Sánchez\n" +
+                "Ashley Itzel Monroy Rivera\n" +
+                "Saúl Benítez Silva\n" +
+                "Nelsy Andrea Mariscal Flores\n" +
+                "Ana Julia Carrizales García\n" +
+                "Diana Lizeth Vargas Velázquez\n" +
+                "Alan Arciniega Lomas\n" +
+                "Angelina Nohemí Colazo Medrano");
+        }
+        private void mnuExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void mnuRed_Click(object sender, EventArgs e)
+        {
+            this.Background = Brushes.IndianRed;
+        }
+        private void mnuBlue_Click(object sender, EventArgs e)
+        {
+            this.Background = Brushes.CadetBlue;
+        }
+        private void mnuPurple_Click(object sender, EventArgs e)
+        {
+            this.Background = Brushes.MediumPurple;
+        }
+        private void mnuDefault_Click(object sender, EventArgs e)
+        {
+            this.Background = Brushes.BlanchedAlmond;
+        }
 
         private void History_Click(object sender, RoutedEventArgs e)
         {
@@ -865,10 +903,10 @@ namespace ProyectoProgra
             }
             History historial = new History()
             {
-                coin1 = comboBox1.Text,
-                change1 = Convert.ToDecimal(textBox1.Text),
-                coin2 = comboBox2.Text,
-                change2 = Convert.ToDecimal(textBox2.Text)
+                Coin1 = comboBox1.Text,
+                Change1 = Convert.ToDecimal(textBox1.Text),
+                Coin2 = comboBox2.Text,
+                Change2 = Convert.ToDecimal(textBox2.Text)
 
             };
 
@@ -1703,10 +1741,10 @@ namespace ProyectoProgra
             //Agregar
             History historial = new History()
             {
-                coin1 = comboBox1.Text,
-                change1 = Convert.ToDecimal(textBox1.Text),
-                coin2 = comboBox2.Text,
-                change2 = Convert.ToDecimal(textBox2.Text)
+                Coin1 = comboBox1.Text,
+                Change1 = Convert.ToDecimal(textBox1.Text),
+                Coin2 = comboBox2.Text,
+                Change2 = Convert.ToDecimal(textBox2.Text)
 
             };
 
