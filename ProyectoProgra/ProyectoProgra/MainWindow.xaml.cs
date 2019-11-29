@@ -29,15 +29,6 @@ namespace ProyectoProgra
         public MainWindow()
         {
             InitializeComponent();
-           LeerDatos();
-        }
-        private void LeerDatos()
-        {
-            using (SQLiteConnection conn = new SQLiteConnection(rutaBaseDeDatos))
-            {
-                conn.CreateTable<History>();
-                HistoryList.ItemsSource = conn.Table<History>();
-            }
         }
 
         private void History_Click(object sender, RoutedEventArgs e)
@@ -48,6 +39,8 @@ namespace ProyectoProgra
 
         private void SwitchBtn_Click(object sender, RoutedEventArgs e)
         {
+            string workingDirectory = Environment.CurrentDirectory;
+            string rutaBaseDeDatos = Directory.GetParent(workingDirectory).Parent.FullName + "\\Historial.db";
             string i, t;
             //string selectedItem = comboBox1.Items[comboBox1.SelectedIndex].ToString();
             i = comboBox1.Text;
@@ -869,6 +862,20 @@ namespace ProyectoProgra
                     textBox2.Text = result;
                     textBox3.Text = "1 ---> 1";
                 }
+            }
+            History historial = new History()
+            {
+                coin1 = comboBox1.Text,
+                change1 = Convert.ToDecimal(textBox1.Text),
+                coin2 = comboBox2.Text,
+                change2 = Convert.ToDecimal(textBox2.Text)
+
+            };
+
+            using (SQLiteConnection conexion = new SQLiteConnection(rutaBaseDeDatos))
+            {
+                //conexion.CreateTable<History>();
+                conexion.Insert(historial);
             }
         }
 
@@ -1693,7 +1700,7 @@ namespace ProyectoProgra
                     textBox3.Text = "1 ---> 1";
                 }
             }
-            /*Agregar
+            //Agregar
             History historial = new History()
             {
                 coin1 = comboBox1.Text,
@@ -1705,10 +1712,9 @@ namespace ProyectoProgra
 
             using (SQLiteConnection conexion = new SQLiteConnection(rutaBaseDeDatos))
             {
-                conexion.CreateTable<History>();
+                //conexion.CreateTable<History>();
                 conexion.Insert(historial);
             }
-            Close();*/
         }
        
             
